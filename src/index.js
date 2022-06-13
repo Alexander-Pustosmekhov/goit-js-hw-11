@@ -37,17 +37,17 @@ function getUserValue(event) {
     .catch(er => console.log(er));
 }
 
-// function fetchImages(nameImg) {
-//   const BASE_KEY = '28009365-b13229069e90e89edcbb86dcf';
-//   const URL = 'https://pixabay.com';
-//   const options = `?key=${BASE_KEY}&q=${nameImg}&image_type=photo&orientation=horizontal&safesearch=true&per_page=40&page=${counter}`;
-//   return fetch(`${URL}/api/${options}`).then(resolve => {
-//     if (!resolve.ok) {
-//       throw new Error(console.log(resolve.statusText));
-//     }
-//     return resolve.json();
-//   });
-// }
+function fetchImages(nameImg) {
+  const BASE_KEY = '28009365-b13229069e90e89edcbb86dcf';
+  const URL = 'https://pixabay.com';
+  const options = `?key=${BASE_KEY}&q=${nameImg}&image_type=photo&orientation=horizontal&safesearch=true&per_page=40&page=${counter}`;
+  return fetch(`${URL}/api/${options}`).then(resolve => {
+    if (!resolve.ok) {
+      throw new Error(console.log(resolve.statusText));
+    }
+    return resolve.json();
+  });
+}
 
 function renderCardsMarkup(resolve) {
   const markup = `<ul class="gallery-list">${resolve.hits
