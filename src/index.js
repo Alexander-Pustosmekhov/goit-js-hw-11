@@ -22,6 +22,7 @@ formEl.addEventListener('submit', getUserValue);
 // Functions
 async function getUserValue(e) {
   e.preventDefault();
+  galleryEl.innerHTML = '';
   nameImage = e.target.elements.searchQuery.value.trim();
   if (!nameImage) return;
   page = 1;
@@ -35,7 +36,7 @@ async function getUserValue(e) {
       );
     }
 
-    galleryEl.innerHTML = '';
+    // galleryEl.innerHTML = '';
     Notify.success(`Hooray! We found ${userData.totalHits} images.`);
     renderCardsMarkup(userValue);
     ourLightbox = new SimpleLightbox('.gallery a');
