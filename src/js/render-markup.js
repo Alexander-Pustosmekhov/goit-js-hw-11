@@ -18,25 +18,24 @@ export function renderCardsMarkup(resolve) {
           <a href="${largeImageURL}">
             <img class="gallery__image" src="${webformatURL}" alt="${tags}" loading="lazy" />
           </a>
-          <div class="info">
-            <p class="info-item">
-              <b>Likes</b>
-              ${likes}
-            </p>
-            <p class="info-item">
-              <b>Views</b>
-              ${views}
-            </p>
-            <p class="info-item">
-              <b>Comments</b>
-              ${comments}
-            </p>
-            <p class="info-item">
-              <b>Downloads</b>
-              ${downloads}
-            </p>
-          </div>
-        </div></li>`;
+          <ul class="info">
+            <li class="info-list">
+              <p class="info-text">Likes :</p>
+              <span>${likes}</span>
+            </li>
+            <li class="info-list">
+              <p class="info-text">Views :</p>
+              <span>${views}</span>
+            </li>
+            <li class="info-list">
+              <p class="info-text">Comments :</p>
+              <span>${comments}</span>
+            </li>
+            <li class="info-list">
+              <p class="info-text">Downloads :</p>
+              <span>${downloads}</span>
+            </li>
+          </ul></li>`;
       }
     )
     .join('')}</ul>`;

@@ -1,44 +1,6 @@
-// header {
-//   position: fixed;
-//   width: 100%;
-//   background-color: blue;
-//   padding-top: 20px;
-//   padding-bottom: 20px;
-//   z-index: 3;
-// }
-
-// .container {
-//   position: relative;
-// }
-
-// form {
-//   display: flex;
-//   justify-content: center;
-// }
-
-// input {
-//   border: none;
-//   border-radius: 5px;
-//   padding-right: 30px;
-//   outline: none;
-// }
-
-// .button {
-//   position: absolute;
-//   padding: 0;
-//   border: none;
-//   top: 0;
-//   right: 0;
-//   cursor: pointer;
-//   border-radius: 5px;
-//   width: 23px;
-//   height: 100%;
-//   font-size: 13px;
-// }
-
 header {
   position: fixed;
-  background: linear-gradient(to left, rgb(64, 68, 179), rgb(234, 21, 216));
+  background: linear-gradient(to left, rgb(50, 50, 50), rgb(120, 120, 120));
   padding-top: 30px;
   padding-bottom: 30px;
   width: 100%;

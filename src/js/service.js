@@ -6,7 +6,6 @@ import { nameImage, page, ourLightbox } from '../index';
 export async function onClickMoreImg() {
   try {
     if (page !== null) {
-      //   page += 1;
       const user = await fetchImages(nameImage);
       renderCardsMarkup(user);
       ourLightbox.refresh();

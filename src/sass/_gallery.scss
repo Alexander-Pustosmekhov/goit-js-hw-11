@@ -55,3 +55,25 @@ img:hover {
 .hidden {
   display: none;
 }
+
+.info {
+  display: flex;
+  justify-content: center;
+  padding-inline-start: 0;
+}
+.info-list {
+  margin: 0;
+  padding-bottom: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.info-list:not(:last-child) {
+  margin-right: 15px;
+}
+.info-text {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: unset;
+  font-weight: 700;
+}
